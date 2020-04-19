@@ -1,6 +1,5 @@
-package org.example;
+package org.codegladiator;
 
-import org.codegladiator.EarthquakeInAfrica;
 import org.junit.Test;
 
 import java.io.File;
