@@ -12,13 +12,22 @@ import java.util.concurrent.TimeUnit;
 public class EarthquakeInAfrica
 {
   private final Map<Integer, City> graph;
+  private final Scanner            scanner;
 
   /**
-   * Default constructor.
+   * Sets the scanner to read the data for the problem.
    */
-  public EarthquakeInAfrica()
+  public EarthquakeInAfrica(final Scanner scanner)
   {
+    // Ensure that the scanner has been specified to read the
+    // data required for the problem.
+    if (scanner == null)
+    {
+      throw new NullPointerException("Argument [scanner] cannot be null.");
+    }
     graph = new HashMap<>();
+
+    this.scanner = scanner;
   }
 
   /**
@@ -39,24 +48,39 @@ public class EarthquakeInAfrica
    * affected city was considered as final city to establish the base camp.
    * </p>
    */
-  public void init()
+  public int solve(final ExecutionTypeEnum executionType)
   {
     // Setup the information provided for the problem
     setup();
 
-    final long startTimeForLinearExecution = System.currentTimeMillis();
-    processSequentially();
-    System.out.println("Linear Execution took:" + (System.currentTimeMillis() - startTimeForLinearExecution) + " milliseconds");
+    switch (executionType)
+    {
+      case PARALLEL:
+      {
+        final long startTimeForLinearExecution = System.currentTimeMillis();
+        final int result = processSequentially();
+        System.out.println("Sequential Execution took:" + (System.currentTimeMillis() - startTimeForLinearExecution) + " milliseconds");
+        return result;
+      }
+      case SEQUENTIAL:
+      {
+        final long startTimeForLinearExecution = System.currentTimeMillis();
+        final int result = processUsingMultiThreading();
+        System.out.println("Parallel Execution took:" + (System.currentTimeMillis() - startTimeForLinearExecution) + " milliseconds");
+        return result;
+      }
+      default:
+        // Do nothing
+        break;
+    }
 
-    final long startTimeForConcurrentExecution = System.currentTimeMillis();
-    processUsingMultiThreading();
-    System.out.println("Concurrent Execution took:" + (System.currentTimeMillis() - startTimeForConcurrentExecution) + " milliseconds");
+    return 0;
   }
 
   /**
    * Processes the problem using multiple threads.
    */
-  private void processUsingMultiThreading()
+  private int processUsingMultiThreading()
   {
     if (!graph.isEmpty())
     {
@@ -100,14 +124,16 @@ public class EarthquakeInAfrica
         e.printStackTrace();
       }
 
-      System.out.println(shortestPaths.first() * 2);
+      return shortestPaths.first() * 2;
     }
+
+    return 0;
   }
 
   /**
    * Processes iterations sequentially.
    */
-  private void processSequentially()
+  private int processSequentially()
   {
     if (!graph.isEmpty())
     {
@@ -135,8 +161,10 @@ public class EarthquakeInAfrica
         }
       }
 
-      System.out.println(shortestPath * 2);
+      return shortestPath * 2;
     }
+
+    return 0;
   }
 
   /**
@@ -228,8 +256,6 @@ public class EarthquakeInAfrica
    */
   private void setup()
   {
-    final Scanner scanner = new Scanner(System.in);
-
     final int cities = scanner.nextInt();
     for (int city = 1; city <= cities; city++)
     {
@@ -447,11 +473,10 @@ public class EarthquakeInAfrica
   }
 
   /**
-   * Entry point for the solution
+   * Execution method for this problem.
    */
-  public static void main(String[] args)
+  public enum ExecutionTypeEnum
   {
-    final EarthquakeInAfrica obj = new EarthquakeInAfrica();
-    obj.init();
+    PARALLEL, SEQUENTIAL;
   }
 }
