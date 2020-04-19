@@ -2,7 +2,7 @@
 This repository has the code to solve the following problems. Please read the problem(s) before going into the solution.
 <ol>
   <li>
-    <a href="https://www.techgig.com/practice/question/Y0Y2NndVR2FYTUFxZElLRkhRYzdPQT09"> Earthquake in Africa.</a>. This problem is also explained <a href="#problem">here</a>.
+    <a href="https://www.techgig.com/practice/question/Y0Y2NndVR2FYTUFxZElLRkhRYzdPQT09" target="_blank"> Earthquake in Africa.</a>. This problem is also explained <a href="#problem">here</a>.
   </li>
 </ol>
 
