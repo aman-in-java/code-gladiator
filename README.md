@@ -1,2 +1,7 @@
 # code-gladiator
-This repository was created to demonstrated coding skills, I have decided to take a problem specified at <a href="https://www.techgig.com/practice/question/Y0Y2NndVR2FYTUFxZElLRkhRYzdPQT09"> Code Gladiator</a>. 
+This repository has the code to solve the following problems. Please read the problem(s) before going into the solution.
+<ol>
+  <li>
+    <a href="https://www.techgig.com/practice/question/Y0Y2NndVR2FYTUFxZElLRkhRYzdPQT09"> Earthquake in Africa.</a>
+  </li>
+  </ol
