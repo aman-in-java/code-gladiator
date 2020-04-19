@@ -41,7 +41,7 @@ The minimum distance the truck needs to travel in a day if the base is set in an
 
 Sample TestCase 1
 <br/>
-Input
+Input<br/>
 6 9 3<br/>
 3<br/>
 4<br/>
