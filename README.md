@@ -35,3 +35,25 @@ Constraints
 1 <= u, v <= N
 
 1 <= l <= 1000
+
+<b>Output Format</b>
+The minimum distance the truck needs to travel in a day if the base is set in an optimal location
+
+Sample TestCase 1
+Input
+6 9 3
+3
+4
+5
+1 2 7
+1 6 6
+2 3 1
+2 6 5
+3 4 1
+3 5 3
+4 5 1
+4 6 4
+5 6 10
+
+Output
+6
