@@ -57,16 +57,16 @@ public class EarthquakeInAfrica
     {
       case PARALLEL:
       {
-        final long startTimeForLinearExecution = System.currentTimeMillis();
-        final int result = processSequentially();
-        System.out.println("Sequential Execution took:" + (System.currentTimeMillis() - startTimeForLinearExecution) + " milliseconds");
+        final long startTimeForParallelExecution = System.currentTimeMillis();
+        final int result = processUsingMultiThreading();
+        System.out.println("Parallel Execution took:" + (System.currentTimeMillis() - startTimeForParallelExecution) + " milliseconds");
         return result;
       }
       case SEQUENTIAL:
       {
         final long startTimeForLinearExecution = System.currentTimeMillis();
-        final int result = processUsingMultiThreading();
-        System.out.println("Parallel Execution took:" + (System.currentTimeMillis() - startTimeForLinearExecution) + " milliseconds");
+        final int result = processSequentially();
+        System.out.println("Sequential Execution took:" + (System.currentTimeMillis() - startTimeForLinearExecution) + " milliseconds");
         return result;
       }
       default:
