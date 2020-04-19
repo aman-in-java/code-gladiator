@@ -24,3 +24,14 @@ This repository has the code to solve the following problems. Please read the pr
 <p>Line 1: Three space-separated integers N, M, and K - number of cities, number of roads, and number of affected cities respectively.</p>
 <p>Next, K line contains an integer in each line in the range 1...N identifying an affected city.</p>
 <p>Next M lines: Each line contains three space separated integers u, v(1 <= u, v <= N), and l (1 <= l <= 1000) indicating the presence of a road between cities u and v.</p>
+
+Constraints
+1 <= N <= 10000
+
+1 <= M <= 50000
+
+1 <= K < N
+
+1 <= u, v <= N
+
+1 <= l <= 1000
