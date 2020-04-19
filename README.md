@@ -14,7 +14,7 @@ This repository has the code to solve the following problems. Please read the pr
 <p>Note that the truck may have to visit some non-affected cities also while going from one affected city to some other affected city. There are M bi-directional roads between the cities.</p>
 
 <img src="https://www.techgig.com/files/nicUploads/962627561885314.jpg"></img>
-<span>Diagram corresponding to the sample input 1</span>
+<br/><span>Diagram corresponding to the sample input 1</span>
 
 <p>It is guaranteed that all the cities are reachable via some combination of roads. You can also assume that the truck has infinite petrol and it needs not to refill during its trip.</p>
 
