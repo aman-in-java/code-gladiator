@@ -40,20 +40,21 @@ Constraints
 The minimum distance the truck needs to travel in a day if the base is set in an optimal location
 
 Sample TestCase 1
+<br/>
 Input
-6 9 3
-3
-4
-5
-1 2 7
-1 6 6
-2 3 1
-2 6 5
-3 4 1
-3 5 3
-4 5 1
-4 6 4
-5 6 10
-
-Output
+6 9 3<br/>
+3<br/>
+4<br/>
+5<br/>
+1 2 7<br/>
+1 6 6<br/>
+2 3 1<br/>
+2 6 5<br/>
+3 4 1<br/>
+3 5 3<br/>
+4 5 1<br/>
+4 6 4<br/>
+5 6 10<br/>
+<br/>
+Output<br/>
 6
