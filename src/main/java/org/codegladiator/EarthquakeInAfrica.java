@@ -477,6 +477,6 @@ public class EarthquakeInAfrica
    */
   public enum ExecutionTypeEnum
   {
-    PARALLEL, SEQUENTIAL;
+    PARALLEL, SEQUENTIAL
   }
 }
