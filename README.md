@@ -1,2 +1,2 @@
 # code-gladiator
-This repository is created manage and publish the solutions for code gladiator's problems.
+This repository was created to demonstrated coding skills, I have decided to take a problem specified at <a href="https://www.techgig.com/practice/question/Y0Y2NndVR2FYTUFxZElLRkhRYzdPQT09"> Code Gladiator </a>
