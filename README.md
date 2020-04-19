@@ -58,3 +58,12 @@ Input<br/>
 <br/>
 Output<br/>
 6
+
+<b>Explanation</b>
+The diagram above corresponds to the sample input.
+
+
+In the diagram above the yellow vertices shows the earthquake-affected cities, while the blue ones are unaffected. The optimal location is to establish the base in city 2. The edges show the trip of the truck, the green ones show the forward trip of the truck, and the blue ones show its return trip.
+
+
+The optimal location to build base is city 2. The truck then goes like this : 2->3->4->5->4->3->2. Total distance is 1 + 1 + 1 + 1 + 1 + 1 = 6.
